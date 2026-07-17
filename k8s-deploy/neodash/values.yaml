@@ -12,6 +12,9 @@ image:
   tag: 'latest'
 imagePullSecrets: [] # Image pull secret if any
 
+# Init containers
+initContainers: []
+
 # Pod annotations, labels and security context
 podAnnotations: {}
 podLabels: {}
@@ -20,7 +23,7 @@ podSecurityContext: {}
 # Mode configuration using environment variables
 # Set reader mode environment variables when enable_reader_mode is true
 enable_reader_mode: true
-env: 
+env:
   - name: "ssoEnabled"
     value: "false"
   - name: "standalone"
@@ -46,16 +49,16 @@ env:
 
 # Environment variable from secret
 envFromSecrets: []
-  # standaloneUsername: 
+  # standaloneUsername:
       # secretName: "neo4j-connection-secrets"
       # key: "username"
-  # standalonePassword: 
+  # standalonePassword:
       # secretName: "neo4j-connection-secrets"
       # key: "password"
 
 # Service details
 service:
-  type: LoadBalancer # Can also be ClusterIP or NodePort  
+  type: LoadBalancer # Can also be ClusterIP or NodePort
   port: 5005 # For the service to listen in for Traffic
   targetPort: 5005 # Target port is the container port
   annotations: {} # Service annotations for the LoadBalance
@@ -73,7 +76,7 @@ ingress:
   tls: []
 
 # Pod resources request, limits and health check
-resources: 
+resources:
   requests:
     memory: "64Mi"
     cpu: "250m"
