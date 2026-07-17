@@ -16,7 +16,8 @@ imagePullSecrets: [] # Image pull secret if any
 podAnnotations: {}
 podLabels: {}
 podSecurityContext: {}
-
+# Container security context
+containerSecurityContext: {}
 # Mode configuration using environment variables
 # Set reader mode environment variables when enable_reader_mode is true
 enable_reader_mode: true
