@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Map :: NeoDash</title>
+    <meta name="generator" content="Antora 3.1.1">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../../../..">NeoDash</a>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="neodash" data-version="2.4">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../">NeoDash</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../quickstart/">Quickstart</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../">User Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboards/">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../pages/">Pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">Reports</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../table/">Table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graph/">Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bar-chart/">Bar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pie-chart/">Pie Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../line-chart/">Line Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graph3d/">3D Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sunburst/">Sunburst</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../circle-packing/">Circle Packing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../choropleth/">Choropleth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../areamap/">Area Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../treemap/">Treemap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../radar/">Radar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sankey/">Sankey Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gantt/">Gantt Chart</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../single-value/">Single Value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gauge-chart/">Gauge Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../raw-json/">Raw JSON</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../parameter-select/">Parameter Select</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../form/">Form</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../iframe/">iFrame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../markdown/">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../publishing/">Publishing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../bloom-integration/">Bloom Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../extensions/">Extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/advanced-visualizations/">Advanced Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/rule-based-styling/">Rule-Based Styling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/report-actions/">Report Actions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/natural-language-queries/">Text2Cypher - Natural Language Queries</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/forms/">Forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/access-control-management/">Access Control Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../faq/">FAQ</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../developer-guide/">Developer Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/build-and-run/">Build &amp; Run</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/deploy-a-build/">Deploy a Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/configuration/">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/standalone-mode/">Standalone Mode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/component-overview/">Component Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/design/">Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/style-configuration/">Style Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/adding-visualizations/">Adding Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/state-management/">State Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/session-storage/">Session Storage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/testing/">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/contributing/">Contributing</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">NeoDash</span>
+    <span class="version">2.4</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../../">NeoDash</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">2.4</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">NeoDash</a></li>
+    <li><a href="../../">User Guide</a></li>
+    <li><a href="../">Reports</a></li>
+    <li><a href="./">Map</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Map</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This documentation pertains to the (legacy) unsupported version of NeoDash.
+For users of the supported NeoDash offering, refer to <a href="https://neo4j.com/docs/neodash-commercial/">NeoDash commercial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The map report will render all returned nodes, relationships and paths
+on a geomap. <a href="https://www.openstreetmap.org">Open Street Map</a> is used to
+visualize the data on the map.</p>
+</div>
+<div class="paragraph">
+<p>Map visualizations work best with
+<a href="https://neo4j.com/docs/cypher-manual/current/syntax/spatial/#cypher-spatial-specifying-spatial-instants">Neo4j
+Spatial Data</a>. Make sure that the nodes in your database have their
+locations stored as a spatial property.</p>
+</div>
+<div class="paragraph">
+<p>Customizations are available to change several parts of the
+visualization, including the label for each node as well as the colors
+and sizes of the markers/lines.
+The nodes can also automatically cluster together and expand depending on the level of zoom. A heatmap mode is also available.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_nodes_on_a_map"><a class="anchor" href="#_nodes_on_a_map"></a>Nodes on a map</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Note that the nodes returned here have
+<a href="https://neo4j.com/docs/cypher-manual/current/syntax/spatial/">spatial</a>
+properties on them, so they can be visualized on a map.</p>
+</div>
+</blockquote>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (b:Brewery)
+RETURN b</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/map.png" alt="Basic Map">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nodes_and_relationships_on_a_map"><a class="anchor" href="#_nodes_and_relationships_on_a_map"></a>Nodes and relationships on a map</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (b:Brewery)-[e]-&gt;(b2:Brewery)
+RETURN b, e, b2</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/map2.png" alt="Relationships on a Map">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_clustered_nodes_on_a_map"><a class="anchor" href="#_clustered_nodes_on_a_map"></a>Clustered nodes on a map</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (b:Brewery)
+RETURN b</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/map_cluster.png" alt="Clustered nodes on a map">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_heatmap"><a class="anchor" href="#_heatmap"></a>Heatmap</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (b:Brewery)
+RETURN b</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/map_heatmap.png" alt="Heatmap">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_artificial_map_data"><a class="anchor" href="#_artificial_map_data"></a>Artificial map data</h3>
+<div class="paragraph">
+<p>By returning a dictionary instead of a node directly, you can work
+around the visualization expecting nodes and relationships directly.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (l1:Location)&lt;--(a:Person),
+      (a:Person)-[:KNOWS]-(b:Person),
+      (b:Person)--&gt;(l2:Location)
+RETURN {id: a.name, label: "Person", point: l1.point},
+       {id: b.name, label: "Person", point: l2.point},
+       {start: a.name, end: b.name, type: "KNOWS", id: 1}</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/map3.png" alt="Artificial Map Data">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_settings"><a class="anchor" href="#_advanced_settings"></a>Advanced Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 19%;">
+<col style="width: 17%;">
+<col style="width: 26%;">
+<col style="width: 38%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Layer Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">markers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allows you to choose between the standard map with markers, or a heatmap.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster markers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether to automatically cluster and expand the markers on the map.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Color Scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neodash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color scheme to use for the node
+labels. Colors are assigned automatically (consequitevely) to the
+different labels returned by the Cypher query.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Marker Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">large</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The size of the markers for the nodes on
+the map. One of [small, medium, large].</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Color Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the node
+property to map to the node color. This lets you define colors on a
+node-specific level, if you have a property that directly maps to the
+HTML color value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">#a0a0a0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color used for drawing the
+relationships on the map.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Width</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The (default) width of the relationships
+on the map.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Color Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the
+relationship property to map to the relationship color. This lets you
+define colors on a relationship-specific level, if you have a property
+that directly maps to the HTML color value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Width Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">width</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the
+relationship property to map to the arrow width. This lets you define
+widths on a relationship-specific level, if you have a property that
+directly maps to the width value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map Provider URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" class="bare">https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When specified, overrides Open Street map provider with a custom map tiles provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intensity Property (for heatmap)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">intensity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, and only for heatmaps, the node property to use as the intensity of that point on the heatmap. If left empty, all points will have the same intensity of 1. If one of the nodes in the results doesn&#8217;t have the specific property, its intensity will be set to 0.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hide Property Selection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If enabled, hides the property
+selector (footer of the visualization).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auto-run query</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">when activated automatically runs the query
+when the report is displayed. When set to `off', the query is displayed
+and will need to be executed manually.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">markdown text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When specified, adds another button the report header that opens a pop-up. This pop-up contains the rendered markdown from this setting.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rule_based_styling"><a class="anchor" href="#_rule_based_styling"></a>Rule-Based Styling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using the <a href="../#_rule_based_styling">Rule-Based Styling</a> menu, the
+following style rules can be applied to the map:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The color of a node marker.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

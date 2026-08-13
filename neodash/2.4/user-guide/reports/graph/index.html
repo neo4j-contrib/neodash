@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Graph :: NeoDash</title>
+    <meta name="generator" content="Antora 3.1.1">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../../../..">NeoDash</a>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="neodash" data-version="2.4">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../">NeoDash</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../quickstart/">Quickstart</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../">User Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboards/">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../pages/">Pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">Reports</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../table/">Table</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bar-chart/">Bar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pie-chart/">Pie Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../line-chart/">Line Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graph3d/">3D Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sunburst/">Sunburst</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../circle-packing/">Circle Packing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../choropleth/">Choropleth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../areamap/">Area Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../treemap/">Treemap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../radar/">Radar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sankey/">Sankey Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gantt/">Gantt Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../map/">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../single-value/">Single Value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gauge-chart/">Gauge Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../raw-json/">Raw JSON</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../parameter-select/">Parameter Select</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../form/">Form</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../iframe/">iFrame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../markdown/">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../publishing/">Publishing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../bloom-integration/">Bloom Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../extensions/">Extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/advanced-visualizations/">Advanced Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/rule-based-styling/">Rule-Based Styling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/report-actions/">Report Actions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/natural-language-queries/">Text2Cypher - Natural Language Queries</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/forms/">Forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/access-control-management/">Access Control Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../faq/">FAQ</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../developer-guide/">Developer Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/build-and-run/">Build &amp; Run</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/deploy-a-build/">Deploy a Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/configuration/">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/standalone-mode/">Standalone Mode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/component-overview/">Component Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/design/">Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/style-configuration/">Style Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/adding-visualizations/">Adding Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/state-management/">State Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/session-storage/">Session Storage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/testing/">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/contributing/">Contributing</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">NeoDash</span>
+    <span class="version">2.4</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../../">NeoDash</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">2.4</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">NeoDash</a></li>
+    <li><a href="../../">User Guide</a></li>
+    <li><a href="../">Reports</a></li>
+    <li><a href="./">Graph</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Graph</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This documentation pertains to the (legacy) unsupported version of NeoDash.
+For users of the supported NeoDash offering, refer to <a href="https://neo4j.com/docs/neodash-commercial/">NeoDash commercial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The graph report will render all returned nodes, relationships and paths
+in a force-directed graph layout. This includes collections (lists) of
+these objects.</p>
+</div>
+<div class="paragraph">
+<p>The library <code>react-force-graph</code> is used to create the visualizations.
+Depending on your browser, the visualization should be able to handle
+drawing 1000-3000 nodes/relationships with custom styling options.</p>
+</div>
+<div class="paragraph">
+<p>The graph layout contains an extensive set of features, including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Drag and drop nodes.</p>
+</li>
+<li>
+<p>Custom node/relationship styling.</p>
+</li>
+<li>
+<p>Tooltips/inspect window on nodes/relationships.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_basic_graph"><a class="anchor" href="#_basic_graph"></a>Basic Graph</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (p:Person)-[a:ACTED_IN]-&gt;(m:Movie)
+WHERE m.title = 'The Matrix'
+RETURN p, a, m</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/graph.png" alt="Basic Graph">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_virtual_graph"><a class="anchor" href="#_virtual_graph"></a>Virtual Graph</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (p:Person)-[:ACTED_IN]-&gt;(m:Movie)&lt;-[:ACTED_IN]-(p2:Person)
+WHERE m.title = "The Matrix"
+RETURN p, p2, apoc.create.vRelationship(p, "KNOWS", {}, p2)</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/graph2.png" alt="Virtual Graph">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_settings"><a class="anchor" href="#_advanced_settings"></a>Advanced Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12%;">
+<col style="width: 2%;">
+<col style="width: 3%;">
+<col style="width: 83%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Color Scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">neodash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color scheme to use for the node
+labels. Colors are assigned automatically (consequitevely) to the
+different labels returned by the Cypher query.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Label Color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">black</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color of the labels drawn on the
+nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Label Font Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Size of the labels drawn on the
+nodes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default size of a node in the graph
+visualization. This size is applied if no custom size styling is defined
+and no Rule-Based styling is active.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Size Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the node
+property to map to the node size. This lets you define sizes on a
+node-specific level, if you have a property that directly maps to the
+numeric size value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Node Color Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the node
+property to map to the node color. This lets you define colors on a
+node-specific level, if you have a property that directly maps to the
+HTML color value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">#a0a0a0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color used for drawing the
+relationship arrows in the visualization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Width</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The (default) width of the relationship
+arrows in the visualization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Label Color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">#a0a0a0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The color of the labels
+(relationship type) drawn next to the relationship arrows.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Label Font Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.75</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The font size of the labels
+(relationship type) drawn next to the relationship arrows.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Color Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the
+relationship property to map to the arrow color. This lets you define
+colors on a relationship-specific level, if you have a property that
+directly maps to the HTML color value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship Width Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">width</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionally, the name of the
+relationship property to map to the arrow width. This lets you define
+widths on a relationship-specific level, if you have a property that
+directly maps to the width value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Animated Particles on Relationships</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If enabled, draw
+relationships with animated particles on them, moving in the direction
+of the relationship.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Arrow head size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this to set the length of the arrow head, size is adjusted automatically.
+If 0, no arrow will be drawn.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background Color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">#fafafa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The background color of the
+visualization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Layout (experimental)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">force-directed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tree-top-down</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tree-bottom-up</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tree-left-right</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tree-right-left</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">radial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use this to switch from
+the main (force-directed) layout to one of the experimental layouts
+(tree, radial). For the experimental layouts, make sure
+your graph is a DAG (directed acyclic graph).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graph Depth Separation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specify the level distance for the tree layout.
+This setting controls the separation between different levels in the tree hierarchy. Adjusting this value impacts the overall spacing of the tree layout in your graph visualization.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable graph exploration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables basic exploration functionality for the graph. Exploration can be done by right clicking on a node, and choosing 'Expand' to choose a type to traverse. Data is retrieved real-time and not cached in the visualization.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable graph editing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables editing of nodes and relationships in the graph from the right-click context menu. In addition, lets users create new relationships with existing types/property keys as present in the database.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show pop-up on Hover</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">if enabled, shows a pop-up when a
+user hovers over one of the nodes/relationships in the visualization.
+The pop-up contains the label and properties of the node/relationship.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show properties on Click</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">if enabled, opens up a window
+when a user clicks on one of the nodes/relationships in the
+visualization. The window contains the label and properties of the
+node/relationship.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fix node positions after drag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If enabled, locks in
+(freezes) the node positions after a user drags them.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drilldown Link</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text (URL)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(no value)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifying a URL here will
+display a floating button on the top right of the visualization. This
+button can be used to drilldown into a different tool (e.g. Bloom) so
+that the graph can be explored further. Dynamic Dashboard Parameters
+(e.g. $neodash_person_name) can be used in these links as well.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hide Selections</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If enabled, hides the property selector
+(footer of the visualization).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Override no data message</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Query returned no data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Override the message displayed to the user when their query returns no data.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auto-run query</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">when activated automatically runs the query
+when the report is displayed. When set to `off', the query is displayed
+and will need to be executed manually.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">markdown text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rule_based_styling"><a class="anchor" href="#_rule_based_styling"></a>Rule-Based Styling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using the <a href="../#_rule_based_styling">Rule-Based Styling</a> menu, the
+following style rules can be applied to the graph:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The background color of a node.</p>
+</li>
+<li>
+<p>The label color of a node.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

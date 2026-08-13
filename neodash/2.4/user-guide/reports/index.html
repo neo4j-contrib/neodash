@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reports :: NeoDash</title>
+    <meta name="generator" content="Antora 3.1.1">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../../..">NeoDash</a>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="neodash" data-version="2.4">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../">NeoDash</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../quickstart/">Quickstart</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">User Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dashboards/">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pages/">Pages</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="./">Reports</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="table/">Table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graph/">Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="bar-chart/">Bar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="pie-chart/">Pie Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="line-chart/">Line Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="graph3d/">3D Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sunburst/">Sunburst</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="circle-packing/">Circle Packing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="choropleth/">Choropleth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="areamap/">Area Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="treemap/">Treemap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="radar/">Radar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sankey/">Sankey Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="gantt/">Gantt Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="map/">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="single-value/">Single Value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="gauge-chart/">Gauge Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="raw-json/">Raw JSON</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="parameter-select/">Parameter Select</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="form/">Form</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="iframe/">iFrame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="markdown/">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../publishing/">Publishing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../bloom-integration/">Bloom Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../extensions/">Extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/advanced-visualizations/">Advanced Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/rule-based-styling/">Rule-Based Styling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/report-actions/">Report Actions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/natural-language-queries/">Text2Cypher - Natural Language Queries</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/forms/">Forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../extensions/access-control-management/">Access Control Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../faq/">FAQ</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../developer-guide/">Developer Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/build-and-run/">Build &amp; Run</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/deploy-a-build/">Deploy a Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/configuration/">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/standalone-mode/">Standalone Mode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/component-overview/">Component Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/design/">Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/style-configuration/">Style Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/adding-visualizations/">Adding Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/state-management/">State Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/session-storage/">Session Storage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/testing/">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../developer-guide/contributing/">Contributing</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">NeoDash</span>
+    <span class="version">2.4</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../">NeoDash</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">2.4</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">NeoDash</a></li>
+    <li><a href="../">User Guide</a></li>
+    <li><a href="./">Reports</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Reports</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This documentation pertains to the (legacy) unsupported version of NeoDash.
+For users of the supported NeoDash offering, refer to <a href="https://neo4j.com/docs/neodash-commercial/">NeoDash commercial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>A report is the smallest building build of your dashboard. Each report
+will have a single Cypher query behind it that is used to populate the
+report. Reports can be of several types (graph, table, bar chart, etc.),
+each of which expect different types of data. See the relevant
+documentation pages for more information.</p>
+</div>
+<div class="paragraph">
+<p>A report can be given a title, which will be displayed in the dashboard
+header. To change the query of a report, open the settings by clicking
+the (⋮) icon on the top right of the report.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/report.gif" alt="Report">
+</div>
+</div>
+<div class="paragraph">
+<p>The settings window additionally allows you to change the type of
+report, the refresh rate of the report, and a number of <strong>Advanced
+Settings</strong>. The advanced settings differ between the different report
+types, and can be viewed by toggling the switch on the bottom left of
+the settings page.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_and_delete_reports"><a class="anchor" href="#_create_and_delete_reports"></a>Create and Delete Reports</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A new report can be added to a page by clicking the large (+) button at
+the end of the page. By default, a report will have nothing defined, so
+you will need to set the query before any data is visualized.</p>
+</div>
+<div class="paragraph">
+<p>Reports can be deleted by opening the report settings, and clicking the
+🗑️ icon in the report header.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_order_reports"><a class="anchor" href="#_re_order_reports"></a>Re-order Reports</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As of NeoDash 2.1, reports can be re-ordered by dragging and dropping
+them around the page. To move a report, grab it by the handle (top left
+corner), and drag it to the desired location.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/movereport.gif" alt="Report">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resize_reports"><a class="anchor" href="#_resize_reports"></a>Resize Reports</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As of NeoDash 2.1, reports can be resized by grabbing their bottom-right
+corner, and dragging your mouse to the desired size.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/resizereport.gif" alt="Report">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_writing_queries"><a class="anchor" href="#_writing_queries"></a>Writing Queries</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A single Cypher query is used to populate each report. As any Cypher
+syntax is supported, this includes
+<a href="https://neo4j.com/developer/neo4j-apoc/">APOC</a>,
+<a href="https://neo4j.com/docs/graph-data-science/current/">GDS</a>, and even
+<a href="https://neo4j.com/docs/operations-manual/current/fabric/queries/">Fabric</a>!</p>
+</div>
+<div class="paragraph">
+<p>Keep the following best practises in mind when writing your Cypher
+queries:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Always use a <code>LIMIT</code> in your query to keep the result size
+manageable.</p>
+</li>
+<li>
+<p>Ensure you return the right data types for the right
+report type. For example, a graph report expects nodes and
+relationships, whereas a line chart expects numbers.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_row_limiting"><a class="anchor" href="#_row_limiting"></a>Row Limiting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NeoDash has a built-in post-query <strong>row limiter</strong>. This means that results
+are truncated to a maximum number of rows, depending on the report type.
+The row limiter is in place to ensure that visualizations do not become
+too complex for the browser to handle.</p>
+</div>
+<div class="paragraph">
+<p>Note that even though the row limiter is enabled by default, rows are
+only limited after the query is executed. For this reason, it is
+recommended to use the <code>LIMIT</code> clause in your query at all times.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parameters"><a class="anchor" href="#_parameters"></a>Parameters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Parameters can be set in a dashboard by using a <a href="parameter-select">Parameter Select</a> report. Set parameters are then available in any Cypher query across the dashboard.</p>
+</div>
+<div class="paragraph">
+<p>In addition, <strong>session parameters</strong> are available based on the currently active database connection.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$session_uri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URI of the current active database connection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$session_database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Neo4j database that was connected to when the user logged in.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$session_username</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The username used to authenticate to Neo4j.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_report_types"><a class="anchor" href="#_report_types"></a>Report Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To learn more about a specific report type, see one of the following
+pages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="table">Table</a></p>
+</li>
+<li>
+<p><a href="graph">Graph</a></p>
+</li>
+<li>
+<p><a href="bar-chart">Bar Chart</a></p>
+</li>
+<li>
+<p><a href="pie-chart">Pie Chart</a></p>
+</li>
+<li>
+<p><a href="line-chart">Line Chart</a></p>
+</li>
+<li>
+<p><a href="graph3d">3D Graph</a></p>
+</li>
+<li>
+<p><a href="sunburst">Sunburst</a></p>
+</li>
+<li>
+<p><a href="circle-packing">Circle Packing</a></p>
+</li>
+<li>
+<p><a href="treemap">Treemap</a></p>
+</li>
+<li>
+<p><a href="radar">Radar Chart</a></p>
+</li>
+<li>
+<p><a href="map">Map</a></p>
+</li>
+<li>
+<p><a href="choropleth">Choropleth Chart</a></p>
+</li>
+<li>
+<p><a href="areamap">Area Map</a></p>
+</li>
+<li>
+<p><a href="single-value">Single Value</a></p>
+</li>
+<li>
+<p><a href="sankey">Sankey Chart</a></p>
+</li>
+<li>
+<p><a href="gantt">Gantt Chart</a></p>
+</li>
+<li>
+<p><a href="gauge">Gauge Chart</a></p>
+</li>
+<li>
+<p><a href="raw-json">Raw JSON</a></p>
+</li>
+<li>
+<p><a href="parameter-select">Parameter Select</a></p>
+</li>
+<li>
+<p><a href="form">Form</a></p>
+</li>
+<li>
+<p><a href="iframe">iFrame</a></p>
+</li>
+<li>
+<p><a href="markdown">Markdown</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../_/js/site.js" data-ui-root-path="../../../../_"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

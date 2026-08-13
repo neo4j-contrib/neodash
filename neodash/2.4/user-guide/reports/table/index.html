@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Table :: NeoDash</title>
+    <meta name="generator" content="Antora 3.1.1">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../../../..">NeoDash</a>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="neodash" data-version="2.4">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../">NeoDash</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../quickstart/">Quickstart</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../">User Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboards/">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../pages/">Pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">Reports</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graph/">Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bar-chart/">Bar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pie-chart/">Pie Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../line-chart/">Line Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../graph3d/">3D Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sunburst/">Sunburst</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../circle-packing/">Circle Packing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../choropleth/">Choropleth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../areamap/">Area Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../treemap/">Treemap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../radar/">Radar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sankey/">Sankey Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gantt/">Gantt Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../map/">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../single-value/">Single Value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../gauge-chart/">Gauge Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../raw-json/">Raw JSON</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../parameter-select/">Parameter Select</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../form/">Form</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../iframe/">iFrame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../markdown/">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../publishing/">Publishing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../bloom-integration/">Bloom Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../extensions/">Extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/advanced-visualizations/">Advanced Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/rule-based-styling/">Rule-Based Styling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/report-actions/">Report Actions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/natural-language-queries/">Text2Cypher - Natural Language Queries</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/forms/">Forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../extensions/access-control-management/">Access Control Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../faq/">FAQ</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../developer-guide/">Developer Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/build-and-run/">Build &amp; Run</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/deploy-a-build/">Deploy a Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/configuration/">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/standalone-mode/">Standalone Mode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/component-overview/">Component Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/design/">Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/style-configuration/">Style Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/adding-visualizations/">Adding Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/state-management/">State Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/session-storage/">Session Storage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/testing/">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/contributing/">Contributing</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">NeoDash</span>
+    <span class="version">2.4</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../../">NeoDash</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">2.4</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">NeoDash</a></li>
+    <li><a href="../../">User Guide</a></li>
+    <li><a href="../">Reports</a></li>
+    <li><a href="./">Table</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Table</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This documentation pertains to the (legacy) unsupported version of NeoDash.
+For users of the supported NeoDash offering, refer to <a href="https://neo4j.com/docs/neodash-commercial/">NeoDash commercial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The most common report in a dashboard is often a simple table view.
+NeoDash contains a powerful table component that can render all the data
+returned by a Cypher query. This includes simple data like numbers or
+text, but also Neo4j native data like nodes, relationships, and paths.</p>
+</div>
+<div class="paragraph">
+<p>The table report supports the following additional features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>automatic pagination of results.</p>
+</li>
+<li>
+<p>Sorting/filtering by clicking on the table headers.</p>
+</li>
+<li>
+<p>Prefixing a column header with __ (double underscore) will make the column hidden</p>
+</li>
+<li>
+<p>Downloading your data as a CSV file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Double-clicking on a table cell will copy that cell&#8217;s value to the user&#8217;s clipboard.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_basic_table"><a class="anchor" href="#_basic_table"></a>Basic Table</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (n:Movie)&lt;-[:ACTED_IN]-(p:Person)
+RETURN n.title AS Title, n.released AS Released, count(p) as Actors</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/table1.png" alt="Basic Table">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_table_with_nodes_collections"><a class="anchor" href="#_table_with_nodes_collections"></a>Table with nodes / collections</h3>
+<div class="literalblock">
+<div class="content">
+<pre>MATCH (n:Movie)&lt;-[:ACTED_IN]-(p:Person)
+RETURN n, collect(p.name) as actors LIMIT 200</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/table2.png" alt="Table with nodes / collections">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_settings"><a class="anchor" href="#_advanced_settings"></a>Advanced Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12%;">
+<col style="width: 6%;">
+<col style="width: 26%;">
+<col style="width: 56%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Default Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transpose Rows &amp; Columns</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">when activated, transposes the
+rows and columns of the table. This means that each of the returned rows
+from Neo4j will be shown as a column instead of a row.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compact Table</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When activated, makes the rows half height and increase the number of rows per page accordingly.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relative Column Sizes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of numbers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[1, 1, 1, …]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The relative
+width between each of the columns in the table. For example, if the
+first column should be twice the width of the 2nd and 3rd, this will be
+set to ``[2, 1, 1]''.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable CSV Download</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">when activated, displays a button on
+the bottom right of the table footer. This button lets the user download
+the complete set of table results (all pages) as a CSV file.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Override no data message</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Query returned no data.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Override the message displayed to the user when their query returns no data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auto-run query</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on/off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">when activated automatically runs the query
+when the report is displayed. When set to `off', the query is displayed
+and will need to be executed manually.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">markdown text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When specified, adds another button the report header that opens a pop-up. This pop-up contains the rendered markdown from this setting.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rule_based_styling"><a class="anchor" href="#_rule_based_styling"></a>Rule-Based Styling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using the <a href="../#_rule_based_styling">Rule-Based Styling</a> menu, the
+following style rules can be applied to the table:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The background color of an entire row in a table.</p>
+</li>
+<li>
+<p>The text color of an entire row in a table.</p>
+</li>
+<li>
+<p>The background color of a single cell in the table.</p>
+</li>
+<li>
+<p>The text color of a single cell in the table.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If a column is hidden (header prefixed with __ double underscore), it can still be used as an entry point for a styling rule.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_report_actions"><a class="anchor" href="#_report_actions"></a>Report Actions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the <a href="../../extensions/report-actions">Report Actions</a> extension, tables can be turned into interactive components that set parameters.
+Two flavours of report actions for tables exist:</p>
+</div>
+<div class="sect2">
+<h3 id="_1_select_a_value_from_a_row"><a class="anchor" href="#_1_select_a_value_from_a_row"></a>1. Select a value from a row</h3>
+<div class="paragraph">
+<p>Adding a <strong>Cell Click</strong> action to a table column, turns the values in that row into clickable buttons.
+When the user clicks on the button, a predefined parameter is set to one of the columns in that row.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/select-single-table.png" alt="Select a value from a table to be used as a parameter">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_select_multiple_from_a_row"><a class="anchor" href="#_2_select_multiple_from_a_row"></a>2. Select multiple from a row</h3>
+<div class="paragraph">
+<p>Adding a <strong>Row Clicked</strong> action to a table prepends each row with a checkbox.
+The user can then check one or more boxes to update a dashboard parameter.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Keep in mind that regardless if one or more values are selected, the type of the dashboard parameter is a list of values. The queries using the parameter must ensure that the list type is handled correctly.</p>
+</div>
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/select-multiple-table.png" alt="Select multiple values to be used as a parameter">
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Text2Cypher - Natural Language Queries :: NeoDash</title>
+    <meta name="generator" content="Antora 3.1.1">
+    <link rel="stylesheet" href="../../../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../../../..">NeoDash</a>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="neodash" data-version="2.4">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../../../">NeoDash</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../quickstart/">Quickstart</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../">User Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboards/">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../pages/">Pages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../reports/">Reports</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/table/">Table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/graph/">Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/bar-chart/">Bar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/pie-chart/">Pie Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/line-chart/">Line Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/graph3d/">3D Graph</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/sunburst/">Sunburst</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/circle-packing/">Circle Packing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/choropleth/">Choropleth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/areamap/">Area Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/treemap/">Treemap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/radar/">Radar Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/sankey/">Sankey Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/gantt/">Gantt Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/map/">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/single-value/">Single Value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/gauge-chart/">Gauge Chart</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/raw-json/">Raw JSON</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/parameter-select/">Parameter Select</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/form/">Form</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/iframe/">iFrame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../reports/markdown/">Markdown</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../publishing/">Publishing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../bloom-integration/">Bloom Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">Extensions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advanced-visualizations/">Advanced Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../rule-based-styling/">Rule-Based Styling</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../report-actions/">Report Actions</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Text2Cypher - Natural Language Queries</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../forms/">Forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../access-control-management/">Access Control Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../faq/">FAQ</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../developer-guide/">Developer Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/build-and-run/">Build &amp; Run</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/deploy-a-build/">Deploy a Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/configuration/">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/standalone-mode/">Standalone Mode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/component-overview/">Component Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/design/">Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/style-configuration/">Style Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/adding-visualizations/">Adding Visualizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/state-management/">State Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/session-storage/">Session Storage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/testing/">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../developer-guide/contributing/">Contributing</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">NeoDash</span>
+    <span class="version">2.4</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../../../">NeoDash</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">2.4</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">NeoDash</a></li>
+    <li><a href="../../">User Guide</a></li>
+    <li><a href="../">Extensions</a></li>
+    <li><a href="./">Text2Cypher - Natural Language Queries</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Text2Cypher - Natural Language Queries</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This documentation pertains to the (legacy) unsupported version of NeoDash.
+For users of the supported NeoDash offering, refer to <a href="https://neo4j.com/docs/neodash-commercial/">NeoDash commercial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Use natural language to generate Cypher queries in NeoDash. Connect to an LLM through an API, and let NeoDash use your database schema + the report types to generate queries automatically.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_it_works"><a class="anchor" href="#_how_it_works"></a>How it works</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This extension feature allows users to interact with NeoDash using natural language to generate Cypher queries for querying Neo4j graph databases.
+This integration leverages Language Models (LLMs) to interpret user inputs and generate Cypher queries based on the provided schema definition.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To enable Natural Language Queries in NeoDash, follow these configuration steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open NeoDash and navigate to the "Extensions" section in the left sidebar.</p>
+</li>
+<li>
+<p>Locate the "Text2Cypher" extension and click on it to activate it.</p>
+</li>
+<li>
+<p>Once activated, a new button will appear on top of the screen, with a red exclamation mark (⚠️). Click this button.</p>
+</li>
+<li>
+<p>In the configuration window, you will be prompted to provide the necessary information to connect to the Language Model (LLM). Enter the model provider, API key, deployment url if needed by the model provider, and select the desired model to use.</p>
+</li>
+<li>
+<p>After providing the required information, click on the "Start Querying" button to finalize the configuration.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/llmconfiguration.png" alt="Configuration settings for the Natural Language Queries extension">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once the extension is configured, you can start using it in your NeoDash reports. Here&#8217;s how:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the Report settings for the desired report.</p>
+</li>
+<li>
+<p>In the report settings, you will find a toggle switch located above the editor. This switch allows you to toggle between Cypher and English languages.</p>
+</li>
+<li>
+<p>Since you have enabled the extension and authenticated by providing your API key, you can switch to the English language mode.</p>
+</li>
+<li>
+<p>Start formulating your queries in plain English, using natural language expressions to describe the data you want to retrieve.</p>
+</li>
+<li>
+<p>After composing your query, you have two options for further actions:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Translate: By clicking the "Translate" button, your query will be translated into Cypher using the Language Model. The translated Cypher query will be displayed in the editor when you toggle to the Cypher view.
+This allows you to review and modify the generated Cypher query before execution.</p>
+</li>
+<li>
+<p>Run: If you wish to directly execute the query and view the results, click the "Run" button in the top right corner. The execution of the query will depend on the selected report type, and the results will be displayed accordingly.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/englisheditor.png" alt="Example of the English editor in NeoDash">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_improving_accuracy_with_custom_prompting"><a class="anchor" href="#_improving_accuracy_with_custom_prompting"></a>Improving Accuracy with Custom Prompting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To boost the accuracy of the language model, you can provide your own example queries to be fed into the prompt.
+Specifying queries specific to your data model &amp; use-cases can significantly improve the quality of Text2Cypher translations.</p>
+</div>
+<div class="paragraph">
+<p>To access the model examples screen, open up the settings for the extensions.
+After specifying the provider and model, click the "Tweak Prompts" button on the bottom-left of the window.
+This leads you to the example interface:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../_images/llm-examples.png" alt="Custom Examples for your prompt">
+</div>
+</div>
+<div class="paragraph">
+<p>In this interface, you can specify one or more examples that are sent to the language model.
+An example consists of both a Cypher query, and a natural language equivalent of that query.
+You can create as many examples as you want, but keeping them close to your user queries will yield best results.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_underlying_functionality"><a class="anchor" href="#_underlying_functionality"></a>Underlying Functionality</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Retrieve the Schema: The system prompts at the beginning of the interaction to retrieve the database schema. This ensures that the generated queries adhere to the provided schema and available relationship types and properties.</p>
+</li>
+<li>
+<p>Prompting in English: Once the schema is retrieved, you can start prompting your queries in plain English. NeoDash, powered by the LLM, will interpret your English query and generate the corresponding Cypher query based on the provided schema.</p>
+</li>
+<li>
+<p>Automatic Query Generation: NeoDash automatically generates the Cypher queries for you, taking into account the report type you specified. Whether it&#8217;s a table, graph, bar chart, line chart, or any other supported report type, the generated queries will retrieve the necessary data based on the report requirements.</p>
+</li>
+<li>
+<p>Retry Logic: To enhance the reliability of the generated queries, we have implemented retry logic. If there is any issue or error during the query generation process, the system will attempt to retry three times as a maximum and provide a valid query to ensure smooth query execution.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompting_tips"><a class="anchor" href="#_prompting_tips"></a>Prompting Tips</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When using Natural Language Queries in NeoDash, keep the following tips in mind to enhance your experience:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Be clear and specific in your queries: Provide detailed descriptions of the data you want to retrieve, including node labels, relationship types, and property values.</p>
+</li>
+<li>
+<p>Use keywords and phrases: Incorporate relevant keywords and phrases that are commonly used in the context of your data to improve query accuracy.</p>
+</li>
+<li>
+<p>Ask precise questions: Frame your queries as questions to obtain specific information. For example, instead of "Show me all customers," try "Which customers have made a purchase in the last month?"</p>
+</li>
+<li>
+<p>Experiment with different phrasings: If you&#8217;re not getting the desired results, try rephrasing your query using synonyms or alternative expressions.</p>
+</li>
+<li>
+<p>Avoid ambiguous queries: Ambiguous or vague queries may yield unexpected results. Make sure to provide sufficient context and clarify any ambiguities.</p>
+</li>
+<li>
+<p>Validate and review generated queries: Always review the generated Cypher queries to ensure they accurately represent your intent and produce the expected results.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_important_considerations"><a class="anchor" href="#_important_considerations"></a>Important Considerations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When using Natural Language Queries with Language Models, it&#8217;s important to be aware of the following considerations:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Multiple model providers: Depending on your configuration, your queries may be processed by different model providers. Take into account that this means your data is being sent to different providers.</p>
+</li>
+<li>
+<p>Non-deterministic nature: Language Models can produce non-deterministic outputs. The generated queries may vary between different runs, even with the same input prompt. Validate the generated queries and perform thorough testing to ensure correctness.</p>
+</li>
+<li>
+<p>Potential hallucination: Language Models can generate outputs that may not align with the specific schema or data constraints. Exercise caution and verify the results to prevent potential inaccuracies or hallucinations.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../../../_/js/site.js" data-ui-root-path="../../../../../_"></script>
+<script async src="../../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
